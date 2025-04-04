@@ -1,15 +1,54 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="Study Buddy Software">
-    <meta name="keywords" content="Study Buddy, Software, Study, Buddy">
-    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
-    <title>Study Buddy Homepage</title> <!-- Tittle of the page -->
-</head>
-<body>
-    <h1>Home</h1>
-    <p>Welcome to the home page.</p>
-    <p><a href="about.php">About</a></p>
-</body>
-</html>
+import React from "react";
+
+const HomePage = () => {
+  return (
+    <div className="min-h-screen bg-gray-100">
+      {/* Header */}
+      <header className="bg-blue-600 text-white p-4 shadow-lg">
+        <div className="container mx-auto flex justify-between items-center">
+          <h1 className="text-xl font-bold">My Website</h1>
+          <nav>
+            <ul className="flex space-x-4">
+              <li><a href="#" className="hover:underline">Home</a></li>
+              <li><a href="#" className="hover:underline">About</a></li>
+              <li><a href="#" className="hover:underline">Services</a></li>
+              <li><a href="#" className="hover:underline">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section className="text-center py-20 bg-blue-500 text-white">
+        <h2 className="text-4xl font-bold">Welcome to My Website</h2>
+        <p className="mt-4 text-lg">We provide awesome services to help you succeed.</p>
+        <button className="mt-6 px-6 py-2 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-gray-200">
+          Get Started
+        </button>
+      </section>
+
+      {/* Features Section */}
+      <section className="container mx-auto py-16 px-6 grid md:grid-cols-3 gap-8">
+        <div className="p-6 bg-white shadow-lg rounded-lg text-center">
+          <h3 className="text-2xl font-semibold">Feature 1</h3>
+          <p className="mt-2 text-gray-600">Description of feature 1.</p>
+        </div>
+        <div className="p-6 bg-white shadow-lg rounded-lg text-center">
+          <h3 className="text-2xl font-semibold">Feature 2</h3>
+          <p className="mt-2 text-gray-600">Description of feature 2.</p>
+        </div>
+        <div className="p-6 bg-white shadow-lg rounded-lg text-center">
+          <h3 className="text-2xl font-semibold">Feature 3</h3>
+          <p className="mt-2 text-gray-600">Description of feature 3.</p>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+};
+
+export default HomePage;
