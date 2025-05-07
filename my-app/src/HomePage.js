@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const AboutPage = () => {
+const HomePage = () => {
   return (
     <div className="min-h-screen bg-green-100 p-8">
       <header className="bg-blue-600 text-white p-4 shadow-lg">
@@ -21,7 +21,7 @@ const AboutPage = () => {
       <main className="text-center py-20">
         <h2 className="text-4xl font-bold">About Us</h2>
         <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
-          Learn more about what we do and how we can help you succeed.
+          More updates coming soon!
         </p>
       </main>
 
@@ -32,4 +32,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default HomePage;
