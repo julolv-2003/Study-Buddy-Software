@@ -9,7 +9,6 @@ const HomePage = () => {
           <h1 className="text-xl font-bold">Studdy Buddy</h1>
           <nav>
             <ul className="flex space-x-4">
-              <li><Link to="/" className="hover:underline">Home</Link></li>
               <li><Link to="/Account" className="hover:underline">Account</Link></li>
               <li><Link to="/Search" className="hover:underline">Search</Link></li>
               <li><Link to="/Groups" className="hover:underline">Groups</Link></li>
@@ -24,10 +23,6 @@ const HomePage = () => {
           More updates coming soon!
         </p>
       </main>
-
-      <footer className="bg-gray-800 text-white text-center py-4">
-        <p>&copy; 2025 My Website. All rights reserved.</p>
-      </footer>
     </div>
   );
 };
